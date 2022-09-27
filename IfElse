@@ -1,0 +1,30 @@
+using System;
+
+public class IfElsePractice
+{
+    public static void Main(string[] args)
+    {
+        for(int ctr = 0; ctr < 5; ctr ++)
+        {
+            Console.Write("Enter Gender(M or F or O): ");
+            string gender = Console.ReadLine();
+            
+            if(gender.ToUpper()=="M")
+            {
+                Console.WriteLine("Your gender is male.");
+            }
+            else if(gender.ToUpper()=="F")
+            {
+                Console.WriteLine("Your gender is female.");
+            }
+            else if(gender.ToUpper()=="O")
+            {
+                Console.WriteLine("Your gender is other.");
+            }
+            else
+            {
+                Console.WriteLine("You did not enter correct input.");
+            }
+        }
+    }
+}
