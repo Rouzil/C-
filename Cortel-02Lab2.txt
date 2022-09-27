@@ -1,0 +1,24 @@
+using System;
+
+public class ComputerAverageProgram {
+  public static void write(String text) {
+    Console.Write(text);
+  }
+
+  public static void line(String line) {
+    Console.WriteLine(line);
+  }
+
+  public static void Main(string[] args) {
+    double average = 0;
+    double sum = 0;
+    line("Enter 5 grades separated by new line: ");
+    for (int x = 0; x < 5; x++) {
+      string grade = Console.ReadLine();
+      int grades = Convert.ToInt32(grade);
+      sum = grades + sum;
+    }
+    average = sum / 5;
+    line("The average is " + average + " and round off to " + Math.Round(average));
+  }
+}

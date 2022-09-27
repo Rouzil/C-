@@ -1,0 +1,19 @@
+using System;
+
+public class DataTypesProgram
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter the pieces of apple: ");
+        string pieces = Console.ReadLine();
+        int PiecesConverted = Convert.ToInt32(pieces);
+        Console.Write("Enter total price of " + PiecesConverted + " apple(s): ");
+        string total = Console.ReadLine();
+        double TotalConverted = Convert.ToDouble(total);
+        Console.WriteLine("The total price of " + " apple(s) is " + TotalConverted);
+        Console.WriteLine("The value of original price is " + TotalConverted);
+        int TotalToInt = (int)TotalConverted;
+        Console.WriteLine("The value of converted price is " + TotalToInt);
+
+    }
+}
