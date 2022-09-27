@@ -1,0 +1,28 @@
+using System;
+
+public class SwitchPractice
+{
+    public static void Main(string[] args)
+    {
+        for(int ctr = 0; ctr < 5; ctr ++)
+        {
+            Console.Write("Enter Gender(M or F or O): ");
+            string gender = Console.ReadLine();
+            
+            switch(gender.ToUpper()){
+                case "M":
+                    Console.WriteLine("Your gender is male.");
+                    break;
+                case "F":
+                    Console.WriteLine("Your Gender is female");
+                    break;
+                case "O":
+                    Console.WriteLine("Your Gender is other");
+                    break;
+                default:
+                    Console.WriteLine("Your input is incorrect");
+                    break;
+            }
+        }
+    }
+}
